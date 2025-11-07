@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #f8fafc 0%, var(--bg) 100%);
+}
+
+/* Card */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 920px;
+  width: calc(100% - 40px);
+  background: #c9c6c6;
+  border-radius: 7px;
+  box-shadow: 0 6px 36px rgba(0,0,0,0.06);
+}
+/* Image section */
+.images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+}
+
+.images img {
+  width: 100%;
+  max-width: 1200px;  
+  height: 600px;      
+  object-fit: cover;  
+  border-radius: 1px; 
+}
+
+.timeline{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 400px;
+
+}
+
+ul li {
+margin-bottom: 10px;
+}
+
+
+
+/* Tablet: 481px to 768px        */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  main.Tribute {
+    max-width: 90%;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .images img {
+    height: 300px;
+    border-radius: 6px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .timeline {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .timeline ul li {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+}
+
+
+/* Mobile: up to 480px           */
+
+@media screen and (max-width: 480px) {
+  main.Tribute {
+    max-width: 100%;
+    padding: 14px;
+    gap: 12px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .images img {
+    height: 220px;
+    border-radius: 6px;
+  }
+
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .timeline ul li {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+
+  .timeline {
+    padding: 10px;
+    max-width: 100%;
+  }
+}
+
+
+/* Large screens: above 768px    */
+
+@media screen and (min-width: 769px) {
+  main.Tribute {
+    max-width: 920px;
+    padding: 30px;
+    gap: 20px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .images img {
+    height: 600px;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .timeline ul li {
+    font-size: 1.1rem;
+  }
+}
